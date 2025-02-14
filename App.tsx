@@ -23,6 +23,11 @@ function  App (): JSX.Element {
             Click Kar!
           </Text>
         </View>
+        <View>
+          <Text style={{color:'#000000',fontSize:20,marginTop:10}}>
+            Background Color:{randomBackground}
+          </Text>
+        </View>
       </TouchableOpacity>
     </View>
     </>
@@ -38,10 +43,9 @@ const styles = StyleSheet.create({
     justifyContent:'center' 
   },
   actionBtn:{
+    alignItems:'center',
     backgroundColor:'#f0f0f0',
-    // padding:10,
-    paddingVertical:10, 
-    paddingHorizontal:40,
+    padding:10,
     borderRadius:5
   },
   actionBtnText:{
